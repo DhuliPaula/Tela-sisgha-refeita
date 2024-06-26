@@ -109,6 +109,14 @@ main {
 .dia p:last-child {
   font-size: 0.68rem;
 }
+
+.diaSelecionado{background-color: #118d3b;
+  border-color: #118d3b;
+  color: #fff;
+}
+.diaSelecionado p:first-child{
+  border-bottom: 2px solid #fff;
+}
 /*horário e aulas*/
 .horarios {
   display: flex;
