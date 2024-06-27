@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+html {
+  display: flexbox;
+  height: 100vh;
+}
 body {
   font-family: poppins;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 90px 1fr;
+  height: 100%;
   margin: 0px;
-  height: 100vh;
 }
 p {
   font-size: 0.75rem;
@@ -14,6 +19,7 @@ p {
 /*conteúdo*/
 .container {
   display: grid;
+  grid-row: 2 / 5;
   place-items: center;
   padding: 3rem;
 }
@@ -38,6 +44,7 @@ main {
 /*menu lateral*/
 .menuLateral {
   display: flex;
+  grid-row: 2 / 8;
   padding: 0.5rem 1rem;
   flex-direction: column;
   justify-content: space-between;
